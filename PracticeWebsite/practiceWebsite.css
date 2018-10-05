@@ -1,0 +1,63 @@
+body
+{
+ background-color: rgba(174, 234, 241, 0.9);	
+}
+
+button
+{
+ background-color: rgba(40, 234, 253, 0.9);
+ color: white;
+ border-radius: 7px;
+ border-color: skyblue;
+}
+
+button:hover
+{
+ background-color: rgba(40, 134, 253, 0.9);
+ border-color: (140, 134, 183, 0.9);
+}
+
+#headerBar
+{
+ background-color: rgba(74, 134, 241, 0.9);	
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+}
+
+#headerBar li
+{
+ display: inline-block;
+}
+
+#mainArea
+{
+ background-color: rgba(174, 234, 241, 0.9);	
+ position: absolute;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 100%;
+}
+
+
+
+#homePageSection
+{
+ background-color: rgba(214, 234, 241, 0.9);
+}
+
+
+#profileSection
+{
+ background-color: rgba(14, 124, 121, 0.9);
+}
+
+
+
+#listingsSection
+{
+ background-color: rgba(122, 124, 241, 0.9);	
+}

@@ -1,0 +1,117 @@
+<!--
+TODO
+--------
+
+Create Sign In/Registration Form
+-Take name & password input
+-strip and sanitize text
+-compare input values to database
+-if match, sign in success, else display error
+
+Create Account Class & Objects (create 10 accounts for practice)
+-id
+-email
+-password
+-alias
+-uploads
+-saved settings
+-saved playlists
+
+Create media item class and objects
+-(account id)/filename
+-title
+-main img
+-description
+-upload timestamp
+
+Search algorithm & display results
+-create temp array of matching results
+-loop through each accounts public uploads, adding any matches to the temp array if they pass all the filters
+-store up to 10(00) results in temp array
+-sort results based on chosen order 
+-display results
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Practice Website</title>
+ <!-- <link rel="icon" href=".png"> -->
+  <link rel="stylesheet" href="practiceWebsite.css">
+</head>
+
+<body>
+<div id="headerBar"> 
+ <ul>
+  <li><button onclick="">Home</button></li>
+  <li><button onclick="">Profile</button></li>
+  <li><button onclick="">Listings</button></li>
+ </ul>  
+</div>
+
+<div id="mainArea"> 
+ <div id="homePageSection">
+  <h1>About xSite Practice Website</h1>
+  <p>A coding practice website.</p>
+  
+  <form>
+  <h2>Sign Up</h2>
+  Email<br>
+  <input id="emailInput" type="text" name="email"><br>
+  
+  Password<br>
+  <input id="passInput" type="text" name="pass"><br>
+  
+  Alias<br>
+  <input id="aliasInput" type="text" name="allias"><br>
+  <button onclick="createAccount()">Register/Sign Up</button> 
+  
+  <button onclick="signIn()">Sign In</button>
+  </form>
+ 
+ </div>
+ 
+ <div id="profileSection">
+  <h1>Profile</h1>
+  
+  <p></p>
+  <button onclick="populateAccountsUploads()">Populate accounts Uploads</button>
+  <button onclick="displayProfilesTest()">Display Profiles Test</button>
+  <button onclick="testPopulateAccountsUploads()">Test Populate Array Uploads</button>
+ </div>
+ 
+ <div id="listingsSection">
+  <h1>Listings</h1>
+  Search Content<br>
+  <input id="searchInput" type="text" name="searchInput"><button onclick="search()">Search</button><br>
+  
+  <div id="searchResults">
+   <h2>Search Results</h2>
+  </div>
+ </div>
+
+ 
+  <div id="homePageSection">
+  <h1>Daily Personal Training Log</h1>
+  
+  <form>
+  
+  Today's Score<br>
+  <input id="dailyScoreInput" type="text" name="dailyScore"><br>
+  
+  
+   <button  onclick="addScoreToTrainingLog()">Add to log</button>
+   <button onclick="displayDailyTrainingScores()">Display Scores</button>
+  </form>
+ </div>
+ 
+</div>
+
+<script src="jquery.js"></script>
+<script src="practiceWebsite.js"></script>  
+<script src="testAccountsAndMedia.js"></script> 
+</body>
+</html>
